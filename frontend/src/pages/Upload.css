@@ -1,0 +1,58 @@
+.upload-container {
+    max-width: 600px;
+    margin: 20px auto;
+    margin-top: 10%;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/*  MY textbox API key "ki3kom4gsrjroan2teg9agtv1ergmu6uvgoh0mylvkfu17p2"  */
+
+.upload-container h2 {
+    text-align: center;
+}
+
+.upload-container label {
+    display: block;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.upload-container input,
+.upload-container .ql-container {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.upload-btn {
+    background: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 60%;
+    margin-left: 25%;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.upload-btn:hover {
+    background: darkgreen;
+}
+/*<Editor
+apiKey="ki3kom4gsrjroan2teg9agtv1ergmu6uvgoh0mylvkfu17p2" // Replace with your TinyMCE API key if needed
+init={{
+    height: 300,
+    menubar: false,
+    plugins: "advlist autolink lists link image charmap print preview anchor",
+    toolbar:
+        "undo redo | formatselect | bold italic underline | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat",
+}}
+value={product.description} // Use product.description
+onEditorChange={handleDescriptionChange} // Use the correct function
+/>*/

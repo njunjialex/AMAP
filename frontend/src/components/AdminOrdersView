@@ -1,0 +1,90 @@
+// AdminOrderDashboard.js
+import React, { useEffect, useState } from "react";
+import axios from "axios";
+import { Pie } from "react-chartjs-2";
+import {
+  Chart as ChartJS,
+  ArcElement,
+  Tooltip,
+  Legend,
+} from "chart.js";
+import "./AdminOrderDashboard.css";
+
+ChartJS.register(ArcElement, Tooltip, Legend);
+
+const AdminOrderDashboard = () => {
+  const [orders, setOrders] = useState([]);
+  const [stats, setStats] = useState({});
+
+  useEffect(() => {
+    const fetchOrders = async () => {
+      const token = localStorage.getItem("token");
+      const res = await axios.get("http://127.0.0.1:8000/api/admin/orders-dashboard/", {
+        headers: { Authorization: `Bearer ${token}` },
+      });
+      setOrders(res.data.orders);
+      setStats(res.data.stats);
+    };
+
+    fetchOrders();
+  }, []);
+
+  const pieData = {
+    labels: Object.keys(stats),
+    datasets: [
+      {
+        label: "Orders",
+        data: Object.values(stats),
+        backgroundColor: [
+          "#36A2EB", "#4BC0C0", "#FFCE56", "#FF6384", "#9966FF"
+        ],
+      },
+    ],
+  };
+
+  return (
+    <div className="admin-orders">
+      <h2>Admin Order Dashboard</h2>
+
+      <div className="cards-container">
+        {Object.entries(stats).map(([label, count]) => (
+          <div className="card" key={label}>
+            <h3>{label}</h3>
+            <p>{count}</p>
+          </div>
+        ))}
+      </div>
+
+      <div className="chart-section">
+        <Pie data={pieData} />
+      </div>
+
+      <table className="orders-table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Buyer</th>
+            <th>Product</th>
+            <th>Status</th>
+            <th>Amount (KES)</th>
+            <th>Order Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          {orders.map((o) => (
+            <tr key={o.id}>
+              <td>{o.id}</td>
+              <td>{o.buyer_name}</td>
+              <td>{o.product_name}</td>
+              <td>{o.status}</td>
+              <td>{o.amount}</td>
+              <td>{o.order_created_at}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default AdminOrderDashboard;

@@ -1,0 +1,79 @@
+.products {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 8%;
+    
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 4fr));
+    gap: 7px;
+    margin-left: 10%;
+}
+
+.cardi {
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 45vh;
+    text-align: center;
+    background: whitesmoke;
+    border-radius: 5px;
+    height: fit-content;
+    flex-wrap: wrap;
+}
+main .cardi p{
+    line-height: 1.3;
+}
+
+.image img {
+    width: 100%;
+    height: 30vh;
+}
+
+.btn {
+    background: brown;
+    border-radius: 5px;
+    width: 40%;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}del{
+    text-decoration: line-through;
+    color: red;
+}
+
+
+
+/* Responsive Design for Small Screens */
+@media screen and (max-width: 768px) {
+    .products {
+        flex-direction: column; /* Stack items vertically */
+        align-items: center;
+    }
+
+    main {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .card {
+        width: 90%;
+    }
+}
+
+/* Extra Small Screens */
+@media screen and (max-width: 480px) {
+    .card {
+        width: 100%;
+    }
+
+    .btn {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+/*----------------------modified------------------------------*/

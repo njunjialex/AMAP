@@ -1,0 +1,81 @@
+.homepage {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightskyblue;
+  }
+  
+  .slideshow {
+    position: absolute;
+    margin-top: 6rem;
+    stroke: #666;
+    left: 0;
+    width: 50%;
+    height: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-image 1s ease-in-out;
+    z-index: 1;
+    border: none;
+  }
+
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 55%;
+    height: 100%;
+    padding: 60px 40px;
+    background: linear-gradient(to right, rgba(255,255,255,0.1), rgba(255,255,255,0.95));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 2;
+    text-align: left;
+  }
+  
+  .overlay h1 {
+    font-size: 3rem;
+    font-style: italic;
+    margin-bottom: 20px;
+    color: #2d572c;
+  }
+  
+  .overlay p {
+    font-size: 1.6rem;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: #740404;
+    max-width: 90%;
+  }
+  
+  .cta-btn {
+    padding: 14px 30px;
+    font-size: 1.1rem;
+    background-color: brown;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: fit-content;
+    margin-left: 25%;
+  }
+  
+  .cta-btn:hover {
+    background-color: rgb(34, 85, 34);
+  }
+  
+  .footer {
+    position: absolute;
+    bottom: 40px;
+    width: 100%;
+    text-align: center;
+    font-size: 1.4rem;
+    color: #202020;
+  }
+  

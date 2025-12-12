@@ -1,0 +1,67 @@
+h2{
+    margin-top: 10%;
+}
+.filters .autocomplete {
+    display: flex;
+    gap: 10px;
+    margin-top: 1%;
+    margin-left: 5%;
+  }
+  .export-button{
+    background-color: brown;
+    border-radius: 10px;
+    color: white;
+    text-decoration: none;
+    width: 6em;
+    align-items: center;
+    padding: 8px 12px;
+    height: fit-content;
+  }
+  
+  .filters input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 25%;
+    font-size: 16px;
+  }
+  
+  .filters button {
+    padding: 8px 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    width: 6em;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .filters button:hover {
+    background-color: #0056b3;
+  }
+table{
+    background-color: whitesmoke;   
+    margin: auto;
+    margin-top: 1%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 1);
+    padding: 2%;
+    width: 80%;
+    
+}
+table thead{
+    color: brown;
+    gap: 10px;
+    text-align: justify;
+}
+table thead tr th{
+    justify-content: space-between;
+    padding: 2%;
+    
+}
+tbody td{
+    padding: 5px;
+}
+
+
+  

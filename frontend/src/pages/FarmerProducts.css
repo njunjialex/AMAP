@@ -1,0 +1,31 @@
+.farmer-products-container {
+    padding: 20px;
+  }
+  
+  .product-table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .product-table th, .product-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .product-table th {
+    background-color: #f4f4f4;
+  }
+  
+  .edit-btn, .delete-btn, .save-btn, .cancel-btn {
+    margin: 5px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .edit-btn { background-color: #3498db; color: white; }
+  .delete-btn { background-color: #e74c3c; color: white; }
+  .save-btn { background-color: #2ecc71; color: white; }
+  .cancel-btn { background-color: #95a5a6; color: white; }
+  

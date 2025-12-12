@@ -1,0 +1,82 @@
+############################################
+# PYTHON / DJANGO
+############################################
+
+# Virtual environment
+venv/
+backend/venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Django logs and runtime files
+*.log
+db.sqlite3
+media/
+staticfiles/
+
+# Ignore Django secret settings
+*.env
+.env
+backend/.env
+
+# Ignore Django migrations (OPTIONAL)
+# Uncomment if you want Git to ignore migration files
+# backend/**/migrations/
+# backend/**/migrations/*.py
+# !backend/**/migrations/__init__.py
+
+
+############################################
+# REACT / FRONTEND
+############################################
+
+# Node modules
+node_modules/
+frontend/node_modules/
+
+# Build output
+frontend/build/
+build/
+dist/
+
+# Local environment files
+frontend/.env
+*.local
+
+
+############################################
+# SYSTEM FILES
+############################################
+
+# OS generated files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VSCode settings
+.vscode/
+*.code-workspace
+
+# JetBrains IDE
+.idea/
+
+
+############################################
+# OTHER ARTIFACTS
+############################################
+
+# Logs
+*.log
+
+# Backup files
+*.bak
+*.tmp
+
+# Python distribution files
+*.egg-info/
+*.egg
+dist/
+build/

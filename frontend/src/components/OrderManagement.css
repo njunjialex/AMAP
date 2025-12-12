@@ -1,0 +1,35 @@
+.order-management-container {
+    width: 95%;
+    margin: auto;
+    text-align: center;
+  }
+  
+  .order-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .order-table th, .order-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .order-table th {
+    background-color: brown;
+    color: white;
+  }
+  
+  .invoice-btn {
+    background-color: #007bff;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .invoice-btn:hover {
+    background-color: #0056b3;
+  }
+  

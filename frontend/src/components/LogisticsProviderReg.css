@@ -1,0 +1,49 @@
+.logistics-registration-container {
+    max-width: 500px;
+    margin: auto;
+    padding: 2rem;
+    background: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logistics-registration-container h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+  }
+  
+  .logistics-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .logistics-form input {
+    margin-bottom: 1rem;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .logistics-form button {
+    background: #28a745;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .success-msg {
+    color: green;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  .error-msg {
+    color: red;
+    text-align: center;
+    margin-top: 1rem;
+  }
+  

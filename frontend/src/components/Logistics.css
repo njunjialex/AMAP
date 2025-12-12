@@ -1,0 +1,44 @@
+.logistics-dashboard {
+    padding: 30px;
+    background-color: #f9f9f9;
+  }
+  
+  .logistics-dashboard h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .booking-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+  }
+  
+  .booking-table th,
+  .booking-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: center;
+    
+  }
+  
+  .booking-table th {
+    background-color: #2c3e50;
+    color: white;
+  }
+  
+  .update-btn {
+    margin: 5px;
+    padding: 6px 12px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+
+  }
+  
+  .update-btn:hover {
+    background-color: #2980b9;
+  }
+  

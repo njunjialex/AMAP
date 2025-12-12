@@ -1,0 +1,136 @@
+/* Layout Container */
+.section-container {
+    display: flex;
+    width: 100%;
+    min-height: 50vh;
+    background-color: #f5f5f5;
+    margin-top: 10%;
+}
+
+/* Sidebar (Left Column) */
+.sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    transition: color 0.3s ease-in-out;
+}
+
+.sidebar ul li a:hover {
+    color: #0056b3;
+}
+
+/* Main Content (Right Column) */
+.main-content {
+    flex-grow: 1;
+    padding: 40px;
+    text-align: center;
+}
+
+.slogan {
+    font-size: 28px;
+    font-weight: bold;
+    color: brown;
+    margin-bottom: 20px;
+}
+
+/* Slideshow */
+.slideshow {
+    width: 100%;
+    max-width: 600px;
+    height: 40vh;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.slideshow img {
+    
+    max-width: 600px;
+    height: 120%;
+    object-fit:fill;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+    .section-container {
+        flex-direction: column;  /* Stack items on top of each other */
+        margin-top: 45%;
+    }
+
+    .sidebar {
+        width: 100%;  /* Make sidebar full-width */
+        text-align: center;
+        padding: 15px;
+        box-shadow: none;
+        background-color: #fff;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .sidebar ul li {
+        display: inline-block;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
+@media (max-width: 768px) {
+    .section-container {
+        flex-direction: column;  /* Stack items on top of each other */
+        margin-top: 30%;
+    }
+
+    .sidebar {
+        width: 100%;  /* Make sidebar full-width */
+        text-align: center;
+        padding: 15px;
+        box-shadow: none;
+        background-color: #fff;
+    }
+
+    .sidebar ul {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+
+    .sidebar ul li {
+        display: inline-block;
+    }
+
+    .main-content {
+        padding: 20px;
+    }
+}
+
