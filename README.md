@@ -47,3 +47,7 @@ Frontend: ReactJS, Axios, React Router, Socket.io
 Backend: Django, Django REST Framework, PostgreSQL
 
 Integrations: MPesa STK Push, Email OTP verification, File storage
+📧 Contact
+
+Developed by Alex Wanjohi
+Email: njunjialex341@gmail.com
